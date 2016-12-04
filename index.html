@@ -24,7 +24,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
   $(window).bind("load resize", function(){  
   setTimeout(function() {
   var container_width = $('#container').width();    
@@ -53,24 +53,40 @@ jQuery(document).ready(function($) {
 <script type="text/javascript" src="js/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.min.js"></script>
-<script src="js/riot.min.js"></script> 
+<script src="js/routie.min.js"></script> 
 <script type="text/javascript">
 
 $(function(){
   $("#NavBar").load("./pages/navbar.html");
   $("#FooterContent").load("./pages/footer.html");
   $("#Content").load("./pages/home.html");
-})
+});
+
+routie('home', function(){
+  $("#Content").load("./pages/home.html");
+});
+routie('schedule', function(){
+  $("#Content").load("./pages/schedule.html");
+});
+routie('instructors', function(){
+  $("#Content").load("./pages/instructors.html");
+});
+routie('getStarted', function(){
+  $("#Content").load("./pages/getStarted.html");
+});
+routie('contactUs', function(){
+  $("#Content").load("./pages/contactUs.html");
+});
+
+function loadSchedule(){
+  alert("");
+}
 
 $('.carousel').carousel({
   interval: 3500, // in milliseconds
   pause: 'none' // set to 'true' to pause slider on mouse hover
 });
 
-riot.route('', function(e){
-  $("#Content").load("./pages/home.html");
-
-})
 </script>
 </body>
 </html>
