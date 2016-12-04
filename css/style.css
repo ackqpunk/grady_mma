@@ -19,8 +19,11 @@ body {
 	background-image: url('../images/chainlink.png');
 	background-repeat: repeat;
 }
-/*Typography*/
 
+/*Typography*/
+.text-justify {
+	text-align: justify;
+}
 a {
 	color: #23bcf5;
 }
@@ -248,6 +251,12 @@ header.sub__header {
 	width: 100%;
 	position: relative;
 	z-index: 99;
+}
+.navbar .logo {
+	width: 160px;
+}
+.navbar .logo img {
+	padding-top: 12px;
 }
 .navbar-header {
 }
@@ -673,6 +682,71 @@ img.full-width {
 .three__blocks .col-md-4:last-child {
 	margin-right: 0;
 }
+.three__blocks.styles .col-md-3 {
+	background-color: #ccc;
+}
+.three__blocks.styles {
+	background-image: url('../images/chainlink.png');
+}
+.three__blocks.styles [class*="col-"] {
+    background-clip: padding-box;
+    border: 8px solid transparent;
+	border-radius: 16px;
+}
+.three__blocks.styles .col-md-3 {
+    padding: 2%;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.three__blocks.styles .row {
+	padding-bottom: 0px;
+}
+.three__blocks.styles .style {
+    
+}
+.three__blocks.styles .style p {
+    color: #666;
+}
+
+.three__blocks.special {
+	background-image: url('../images/chainlink.png');
+	padding-top: 2em;
+	margin-bottom: 2em;
+}
+.three__blocks.special [class*="col-"] {
+    background-clip: padding-box;
+    border: 8px solid transparent;
+	border-radius: 16px;
+}
+.three__blocks.special .col-md-3,  .three__blocks.special .col-md-4 {
+    padding: 2%;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	background-color: #999;
+}
+
+.grady {
+
+}
+.grady h2 {
+	color: white;
+}
+
+._2p3a {
+	width: 700px !important;
+}
+
+.three__blocks.special .row {
+	padding-bottom: 0px;
+}
+.three__blocks.special .style {
+    
+}
+.three__blocks.special .style p {
+    color: #666;
+}
+
+
 .three__blocks .col-md-6 {
 	background: #fff;
 	box-sizing: border-box;
@@ -968,6 +1042,9 @@ footer button.btn-info:focus {
 }
 }
  @media(max-width:990px) {
+	 .logo {
+		 width: 360px;
+	 }
 .three__blocks .col-md-6, .three__blocks .col-md-4 {
 	width: 100%;
 	margin-right: 0;
@@ -1022,6 +1099,9 @@ footer button.btn-info:focus {
 }
 }
  @media(max-width:768px) {
+	 .logo {
+		 width: 350px;
+	 }
 h1.page_title {
 	padding: 20px 30px;
 }
